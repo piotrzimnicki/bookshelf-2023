@@ -6,12 +6,10 @@ const StyledApp = styled.div`
   // Your style here
 `;
 
-export function App() {
+export const App = () => {
   return (
     <StyledApp>
       <NxWelcome title="spa" />
     </StyledApp>
   );
-}
-
-export default App;
+};

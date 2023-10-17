@@ -1,7 +1,11 @@
 {
   "root": true,
+  "extends": ["plugin:@nx/react",  "plugin:prettier/recommended"],
+  "plugins": ["prettier", "@nx"],
+  "rules": {
+    "prettier/prettier": "error"
+  },
   "ignorePatterns": ["!**/*"],
-  "plugins": ["@nx"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -13,6 +17,5 @@
       "extends": ["plugin:@nx/javascript"],
       "rules": {}
     }
-  ],
-  "extends": ["plugin:@nx/react"]
+  ]
 }
